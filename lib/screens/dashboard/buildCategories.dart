@@ -1,5 +1,6 @@
 import 'package:coffee_shop_app/common-widgets/cbutton.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 Widget buildCategories() {
   return Row(
@@ -26,7 +27,10 @@ Widget buildCategories() {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 30.0, bottom: 15.0),
-            child: Text('Coffee'),
+            child: Text(
+              'Coffee',
+              style: GoogleFonts.inknutAntiqua(),
+            ),
           )
         ],
       ),
@@ -51,7 +55,10 @@ Widget buildCategories() {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 30.0, bottom: 15.0),
-            child: Text('Other Drinks'),
+            child: Text(
+              'Other Drinks',
+              style: GoogleFonts.inknutAntiqua(),
+            ),
           )
         ],
       ),
@@ -76,7 +83,10 @@ Widget buildCategories() {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 30.0, bottom: 15.0),
-            child: Text('Lunch'),
+            child: Text(
+              'Lunch',
+              style: GoogleFonts.inknutAntiqua(),
+            ),
           )
         ],
       ),
@@ -101,7 +111,10 @@ Widget buildCategories() {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 30.0, bottom: 15.0),
-            child: Text('Pastries'),
+            child: Text(
+              'Pastries',
+              style: GoogleFonts.inknutAntiqua(),
+            ),
           )
         ],
       ),

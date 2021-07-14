@@ -49,17 +49,19 @@ class CTextCard extends StatelessWidget {
   const CTextCard({
     required this.child,
     required this.color,
+    required this.elevation,
   });
 
   final Widget? child;
   final Color? color;
+  final double? elevation;
 
   @override
   Widget build(BuildContext context) {
     return Card(
       child: child,
       color: color,
-      elevation: 5.0,
+      elevation: elevation,
       borderOnForeground: false,
       shadowColor: Colors.black26,
       margin: EdgeInsets.all(10.0),

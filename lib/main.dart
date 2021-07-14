@@ -1,4 +1,4 @@
-import 'package:coffee_shop_app/screens/dashboard/dashboard.dart';
+import 'package:coffee_shop_app/screens/dashboard.dart';
 import 'package:flutter/material.dart';
 
 void main() {
