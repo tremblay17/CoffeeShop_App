@@ -1,3 +1,4 @@
+import 'package:coffee_shop_app/screens/cafe_menu.dart';
 import 'package:coffee_shop_app/screens/dashboard.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Coffee App',
-      home: Dashboard(),
+      home: CafeMenu(),
     );
   }
 }

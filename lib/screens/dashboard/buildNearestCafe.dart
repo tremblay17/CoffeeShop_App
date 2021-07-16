@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 Widget buildNearestCafe() {
-  List<CoffeeModel> data = DummyData().coffeeList;
+  List<CafeModel> data = DummyData().cafeList;
 
   return new Container(
     height: 400.0,
@@ -19,11 +19,10 @@ Widget buildNearestCafe() {
           child: Row(
             children: [
               CIconButton2(
-                height: 80.0,
-                width: 70.0,
-                icon: data[index].id == 'food'
-                    ? Icons.bakery_dining
-                    : Icons.coffee,
+                height: 100.0,
+                width: 75.0,
+                icon:
+                    data[index].id % 2 == 0 ? Icons.shopping_bag : Icons.coffee,
                 iconsize: 40.0,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
@@ -42,7 +41,7 @@ Widget buildNearestCafe() {
                 child: GestureDetector(
                   onTap: () {},
                   child: Container(
-                    height: 80.0,
+                    height: 115.0,
                     width: 270.0,
                     child: CTextCard(
                       color: Colors.transparent,
@@ -65,6 +64,13 @@ Widget buildNearestCafe() {
                             alignment: Alignment.centerLeft,
                             child: Text(
                               data[index].desc,
+                              style: GoogleFonts.bioRhyme(),
+                            ),
+                          ),
+                          Align(
+                            alignment: Alignment.bottomLeft,
+                            child: Text(
+                              'See Details',
                               style: GoogleFonts.bioRhyme(),
                             ),
                           ),

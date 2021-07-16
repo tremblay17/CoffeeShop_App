@@ -2,7 +2,7 @@ import 'package:coffee_shop_app/common-widgets/cbutton.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-PreferredSizeWidget buildAppBar() {
+PreferredSizeWidget buildAppBarDashboard() {
   return AppBar(
     automaticallyImplyLeading: false,
     centerTitle: true,
